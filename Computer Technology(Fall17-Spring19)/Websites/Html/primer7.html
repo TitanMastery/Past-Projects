@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<title>Primer 7</title>
+	</head>
+	<body bgColor="yellow" text="blue" alink="green" vlink="green" link="green">
+		<script language="javascript">
+			var an = navigator.appName;
+			var av = navigator.appVersion;
+			document.write("The browser you are using is "+an+" and it is in version "+av);
+			
+			var bgc = document.bgColor;
+			var tc = document.fgColor;
+			var lc = document.linkColor;
+			var alc = document.alinkColor;
+			var vlc = document.vlinkColor;
+			document.write("<ul><li>The background color is: "+bgc+"</li><li>The text color is: "+tc+"</li><li>The link color is: "+lc+"</li><li>The active link color is: "+alc+"</li><li>The visited link color is: "+vlc+"</li></ul>")
+			
+			var t = document.title;
+			var l = document.location;
+			var lm = document.lastModified;
+			document.write("The title of this page is "+t+", it is found at "+l+" and it was last modified on "+lm)
+		</script>
+	</body>
+	<footer>
+		
+	</footer>
+</html>

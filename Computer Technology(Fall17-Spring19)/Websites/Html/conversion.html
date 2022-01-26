@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<title>Kilometers to Miles</title>
+	</head>
+	<body>
+		<script language="javascript">
+			var low=eval(prompt("What is your lowest height?",""));
+			var high=eval(prompt("What is your highest height?",""));
+			var miles;
+			document.write("Miles\tKilometers<br>");
+			while(low<=high){
+					miles=Math.floor((low*0.621371)*100)/100;
+					document.write(miles+"\t"+low+"<br>");
+					low=low+5;
+			}
+		</script>
+	</body>
+	<footer>
+		
+	</footer>
+</html>

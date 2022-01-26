@@ -1,0 +1,22 @@
+#timeDisplay
+{
+	border:solid 1px black;
+	
+	
+}
+
+body {
+   margin:0;
+   padding:0;
+  }
+
+table
+{
+	width:100%;
+}
+
+#storeBody {
+  width: 200px;
+  height: 800px;
+  background-color: #FFF;
+}

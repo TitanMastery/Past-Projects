@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<title>JavaScript Forms and Passing Values Activity #2a</title>
+		<script language="javascript">
+			var nName;
+			var fName;
+			function names(){
+				fName=prompt("What is your first name?","")
+				nName=prompt("What is your nickname?","")
+			}
+			function theName(n){
+				document.getElementById("output").value=n;
+			}
+		</script>
+	</head>
+	<body onLoad="names()">
+		<form>
+			<input type="text" id="output">
+		</form>
+		<button onClick="theName(fName)">First Name</button>
+		<button onClick="theName(nName)">Nickname</button>
+	</body>
+	<footer>
+		
+	</footer>
+</html>

@@ -1,0 +1,17 @@
+<html>
+	<head>
+		<title>Random Image</title>
+	</head>
+	<body onLoad="rImage()">
+		<script language="javascript">
+			function rImage(){
+				var num=Math.floor(Math.random()*6);
+				var images=["ia2/gr/image1.jpg","ia2/gr/image2.jpg","ia2/gr/image3.jpg","ia2/gr/image4.jpg","ia2/gr/image5.jpg","ia2/gr/image6.jpg"];
+				document.body.style.backgroundImage="url("+images[num]+")";
+			}
+		</script>
+	</body>
+	<footer>
+		
+	</footer>
+</html>

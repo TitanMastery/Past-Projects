@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<title>Primer 29</title>
+	</head>
+	<body>
+		<script language="javascript">
+			function validFirst(fn){
+				var fnLen=fn.length;
+				if(fnLen==0){
+					alert("First name is required");
+					document.getElementById("fName").focus();
+				}
+			}
+			function validZip(zp){
+				var zpLen=zp.length;
+				var digits="0123456789";
+				if(zpLen!=5&&zpLen!=10){
+					alert("Zip is not required length");
+					document.getElementById("zip").focus();
+				}
+				for(i=0;i<5;i++){
+					if(digits.indexOf(zp.charAt(i))<0){
+						alert("The first five digits must be numeric");
+						document.getElementById("zip").focus();
+						break
+					}
+				}
+				if(zpLen==10&&zp.charAt(5)!="-"){
+					alert("The hyphen is in the incorrect position");
+					document.getElementById("zip").focus();
+				}
+			}
+		</script>
+		<form>
+			<p>First Name: <input type="text" id="fName"></p>
+			<p>Zip: <input type="text" id="zip" ></p>
+		</form>
+		<button onClick="validFirst(fName.value);validZip(zip.value)">Submit</button>
+	</body>
+	<footer>
+		
+	</footer>
+</html>

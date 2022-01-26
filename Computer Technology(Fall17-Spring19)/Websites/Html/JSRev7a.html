@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<title>JavaScript Review #7a</title>
+		<script language="javascript">
+			function garden(){
+				var answer = prompt("How many hours of shade would your garden recieve each day?","Enter Here");
+				answer=eval(answer);
+				if (answer>11){
+					alert("Shady Garden");
+				}else if (answer<1){
+					alert("Sunny Garden")
+				}else if (answer>=1&&answer<=12){
+					alert("In-Between Garden")
+				}
+			}
+		</script>
+	</head>
+	<body onLoad="garden()">
+		
+	</body>
+	<footer>
+		
+	</footer>
+</html>

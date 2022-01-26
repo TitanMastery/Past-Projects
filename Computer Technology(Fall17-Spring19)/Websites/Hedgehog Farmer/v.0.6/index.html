@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<script src="script.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		
+		<title>Hedgehog Farmer</title>
+	</head>
+	
+	<body onload="timer();update();" bgColor="#ffdead">
+		<center>
+		<table id="mainTable" cellpadding="0" cellspacing="0">
+			<tr id="tableRow1">
+				<td colspan="3"><center><font id="timeDisplay" align=""></font></center></td>
+			</tr>
+			
+			
+			
+			<tr id="tableRow2">
+				<td width="15%"><font id="moneyDisplay">$300</font></td>
+				
+				<td width="75%"><center><font id="hedgehogs"></font><button onclick="breeding()">Breed</button><font id="breedTimer"></font></center></td>
+				
+				<td bgColor="green" id="foodBar" width="10%"><font id="foodNum">20</font></td>
+			</tr>
+			
+			
+			
+			<tr id="tableRow3">
+				<td colspan="3">
+				<img src="gr/background.jpg">
+				<button onclick="shopVars();window.open('markit-upgrades.html','Store','_parent,height=400px,width=220px');">store</button>
+				</td>
+			</tr>
+		</table>
+		</center>
+	</body>
+	
+	<footer>
+	</footer>
+</html>

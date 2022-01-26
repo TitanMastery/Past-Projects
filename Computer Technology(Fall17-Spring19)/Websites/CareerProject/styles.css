@@ -1,0 +1,44 @@
+#footer
+{
+	text-align:center;
+	font-size:12pt;
+	font-style:italic;
+}
+hr
+{
+	width:65%;
+}
+h1
+{
+	text-align:center;
+}
+#navBar
+{
+	font-size:14pt;
+	text-decoration:none;
+	color:#000000;
+}
+h2
+{
+	text-align:center;
+}
+body
+{
+	background-color:#ddddff;
+	color:#000000;
+}
+p
+{
+	font-size:13pt;
+	margin-left:15%;
+	margin-right:15%;
+}
+h3
+{
+	margin-left:15%;
+	margin-right:15%;
+}
+br
+{
+	line-height:50%;
+}

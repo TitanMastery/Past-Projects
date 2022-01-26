@@ -1,0 +1,8 @@
+savings
+rent
+util
+car
+food
+entrtn
+clothes
+misc

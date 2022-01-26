@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<title>JavaScript Review Activity #6a</title>
+		<script language="javascript">
+			function theArea(r,u){
+				var sup=3.14159265*Math.pow(r,2);
+				var square="^2"
+				document.getElementById('area').value=(sup+" "+u+square);
+			}
+			function theCircumference(r,u){
+				var sup=r*2*3.14159265
+				document.getElementById('circumference').value=(sup+" "+u);
+			}
+		</script>
+	</head>
+	<body>
+		<form>
+			Radius:<input type="text" id="radius"><br><br>
+			Units:<input type="text" id="units"><br><br>
+			<input type="button" value="Calculate" onClick="theArea(document.getElementById('radius').value,document.getElementById('units').value), theCircumference(document.getElementById('radius').value,document.getElementById('units').value)">
+			<br><br>
+			Area:<input type="text" id="area">
+			Circumference:<input type="text" id="circumference">
+		</form>
+	</body>
+	<footer>
+		
+	</footer>
+</html>

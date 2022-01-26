@@ -1,0 +1,103 @@
+#navBar
+{
+	background-color:bcab7d;
+	width:90;
+	font-size:24;
+	text-align:center;
+	border:1px black solid;
+}
+#navBar:hover
+{
+	cursor:pointer;
+	background-color:grey;
+	color:white;
+}
+#sideBar
+{
+	height:100%;
+	background-color:#cdd1b6;
+	width:90;
+	vertical-align:top;
+	padding-left:10;
+	font-size:20;
+}
+body
+{
+	background-color:#547d7f;
+	margin:0;
+}
+table, td, tr
+{
+	padding:0;
+	border-spacing:0;
+	border-collapse:collapse;
+	background-color:white;
+	border:1px black solid;
+}
+table
+{
+	height:100%;
+	width:1024;
+}
+div.scrollable
+{
+	width:100%;
+	height:100%;
+	margin:0;
+	padding:0;
+	overflow:auto;
+}
+#footerL
+{
+	padding:15;
+	background-color:#92b9a4;
+	color:black;
+	border-right:none;
+}
+#footerR
+{
+	padding:15;
+	background-color:#92b9a4;
+	color:black;
+	border-left:none;
+	vertical-align:top;
+}
+#fLink:hover
+{
+	cursor:pointer;
+}
+#fLink
+{
+	text-decoration:underline;
+}
+#body
+{
+	padding-left:10;
+	padding-right:10;
+	width:954;
+	background-color:edecd8;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+a:link, a:visited
+{
+    color:black;
+}
+#bannerR
+{
+	font-size:50;
+	font-weight:bold;
+	background-color:#b2cebf;
+	color:black;
+	padding-top:6;
+	border-left:none;
+}
+#bannerL
+{
+	background-color:#b2cebf;
+	border-right:none;
+}

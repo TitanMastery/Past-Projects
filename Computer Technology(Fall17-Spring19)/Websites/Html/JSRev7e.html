@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<title>JavaScript Review #7e</title>
+		<script language="javascript">
+			function calculate(){
+				var ra=eval(document.getElementById("rain").value);
+				var sn=ra*10;
+				document.getElementById("snow").innerHTML=(sn+" inches of snow");
+			}
+		</script>
+	</head>
+	<body>
+		<form>
+			<h2>Snowfall at 28&#8457 Calculator:</h2>
+			<p>Rain(inches): <input type="text" id="rain"></p>
+			<input type="button" value="Calculate" onClick="calculate()"><br><br>
+			<p id="snow"></p>
+		</form>
+	</body>
+	<footer>
+		
+	</footer>
+</html>

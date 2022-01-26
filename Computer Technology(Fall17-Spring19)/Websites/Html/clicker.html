@@ -1,0 +1,77 @@
+<html>
+	<head>
+		<title>Clicker Game</title>
+		<link rel="Shortcut Icon" href="gr/favicon.png">
+	</head>
+	<body onLoad="update()">
+		<script language="javascript">
+			var clicks=0;
+			var cValue=1;
+			var uValue=10;
+			var uValue2=100;
+			var acs=1000;
+			var cButton=document.getElementById("cb");
+			var ac;
+			
+			function update()
+			{
+				var cDisplay=clicks.toLocaleString('en');
+				document.getElementById("noc").innerHTML=("You have "+cDisplay+" clicks");
+				times=setTimeout("update()",0);
+			}
+			
+			function clicker()
+			{	
+				clicks+=cValue;
+			}
+			function aClicker()
+			{	
+				clicks+=cValue;
+				ac=setTimeout("aClicker()",acs);
+			}
+			function acButton()
+			{
+				clearTimeout(ac);
+				if(clicks>=10000){
+					clicks-=10000;
+					document.getElementById('ac').remove();
+					document.getElementById('acb').remove();
+					aClicker();
+				}
+			}
+			
+			function upgrade()
+			{
+				if(clicks>=uValue)
+				{
+					clicks-=uValue;
+					uValue=Math.round(uValue*1.5);
+					cValue+=1;
+					document.getElementById("uc").innerHTML=("Upgrade +1 Cost: "+uValue+" clicks");
+				}
+			}
+			function upgrade2()
+			{
+				if(clicks>=uValue2)
+				{
+					clicks-=uValue2;
+					uValue2=Math.round(uValue2*1.5);
+					cValue+=10;
+					cValue=Math.round(cValue);
+					document.getElementById("uc2").innerHTML=("Upgrade +10 Cost: "+uValue2+" clicks");
+				}
+			}
+		</script>
+		<h1 id="noc">You have 0 clicks</h1>
+		<button id="cb" onClick="clicker()">Click Here!</button><br>
+		<h3 id="uc">Upgrade +1 Cost: 10 clicks</h3>
+		<button onClick="upgrade()">Upgrade</button>
+		<h3 id="uc2">Upgrade +10 Cost: 100 clicks</h3>
+		<button onClick="upgrade2()">Upgrade</button>
+		<h3 id="ac">AutoClicker Cost: 10,000 clicks</h3>
+		<button onClick="acButton()" id="acb">Upgrade</button>
+	</body>
+	<footer>
+		
+	</footer>
+</html>

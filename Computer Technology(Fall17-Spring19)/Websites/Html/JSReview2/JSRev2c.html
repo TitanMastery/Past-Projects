@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<title>JavaScript Review Activity #2c</title>
+	</head>
+	<body>
+		<script language="javascript">
+			function abcd()
+			{
+				alert("You chose "+document.userInfo.gender.value);
+			}
+		</script>
+		<form name="userInfo">
+			<input type="text" onClick="alert('Please enter your first name')" onFocus="style='background-color:yellow;'" onBlur="style='background-color:white;'" name="fName"><br><br>
+			
+			<input type="text" onClick="alert('Please enter your last name')" onFocus="style='background-color:yellow;'" onBlur="style='background-color:white;'" name="lName"><br><br>
+			
+			<input type="text" onClick="alert('Please enter your address')" onFocus="style='background-color:yellow;'" onBlur="style='background-color:white;'" name="address">
+			
+			
+			<p>Male<input type="radio" name="gender" onClick="abcd()" value="male"> Female<input type="radio" name="gender" onClick="abcd()" value="female"></p>
+			
+			
+			<input type="reset" onClick="alert('Warning: You are starting over')">
+			
+			<input type="submit" onClick="alert('Thank you for filling out our survey')">
+		</form>
+	</body>
+	<footer>
+		
+	</footer>
+</html>

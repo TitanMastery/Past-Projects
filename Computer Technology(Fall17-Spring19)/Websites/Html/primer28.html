@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<title>Primer 28</title>
+	</head>
+	<body>
+		<script language="javascript">
+			var num=0;
+			var speeds="1600";
+			var times;
+			var pic1=new Image();
+			pic1.src="gr/pic1.gif";
+			var pic2=new Image();
+			pic2.src="gr/pic2.gif";
+			var pic3=new Image();
+			pic3.src="gr/pic3.gif";
+			var images=[pic1.src,pic2.src,pic3.src];
+			function animation(){
+				var wSpeed=document.theForm.speed.value.toLowerCase();
+				if(wSpeed=="slow"){
+					speeds="2400";
+				}
+				else if(wSpeed=="fast"){
+					speeds="800";
+				}
+				else if(wSpeed=="medium"){
+					speeds="1600";
+				}
+				num++;
+				if (num==3){
+					num=0;
+				}
+				document.theForm.pic.src=images[num];
+				times=setTimeout("animation()",speeds);
+			}
+		</script>
+		<form name="theForm">
+		<img name="pic" src="gr/pic1.gif"><br>
+		<p>Speed(Slow, Medium, Fast):<input type="text" name="speed"></p>
+		</form>
+		<button onClick="clearTimeout(times);JavaScript:animation()">Start</button>
+	</body>
+	<footer>
+		
+	</footer>
+</html>

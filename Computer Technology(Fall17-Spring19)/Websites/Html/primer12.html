@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<title>Primer 12</title>
+		<script language="javascript">
+			var userName=prompt("What's your username?");
+			
+			function winOpen(){
+				var ow = window.open("","sup","height=300,width=500")
+				ow.document.write("<html><head><title>Hello "+userName+" - Here is your window!</title></head><body bgColor='green'><a href='' onClick='window.close()'>Close</a></body><footer></footer></html>")
+			}
+		</script>
+	</head>
+	<body onload="winOpen()">
+		
+	</body>
+	<footer>
+		
+	</footer>
+</html>

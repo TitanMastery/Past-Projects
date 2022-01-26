@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<title>JavaScript Review Activity 3</title>
+		<script language="javascript">
+			function fText(oName) {
+				document.getElementById(oName).style.backgroundColor="#ffdead";
+				document.getElementById(oName).style.color="green";
+				document.getElementById(oName).style.borderWidth="2px";
+			}
+			function nText(oName) {
+				document.getElementById(oName).style.backgroundColor="";
+				document.getElementById(oName).style.color="";
+				document.getElementById(oName).style.borderWidth="";
+			}
+			function rOn(rName){
+				document.getElementById(rName).style.color="red";
+			}
+			function rOff(rName){
+				document.getElementById(rName).style.color="";
+			}
+		</script>
+	</head>
+	<body>
+		<form name="theForm">
+			<input type="text" id="fName" onFocus="fText('fName')" onBlur="nText('fName')"><br><br>
+			<input type="text" id="lName" onFocus="fText('lName')" onBlur="nText('lName')"><br><br>
+			<input type="text" id="address" onFocus="fText('address')" onBlur="nText('address')"><br><br>
+			<input type="text" id="city" onFocus="fText('city')" onBlur="nText('city')"><br><br>
+			<input type="text" id="stateA" onFocus="fText('stateA')" onBlur="nText('stateA')"><br><br>
+			<input type="text" id="zip" onFocus="fText('zip')" onBlur="nText('zip')"><br><br>
+			<h2>Pick the cutest baby animal</h2>
+			<div id="turtle"><input type="radio" name="animals" onFocus="rOn('turtle')" onBlur="rOff('turtle')">Turtle</div>
+			<div id="wolf"><input type="radio" name="animals" onFocus="rOn('wolf')" onBlur="rOff('wolf')">Wolf</div>
+			<div id="spider"><input type="radio" name="animals" onFocus="rOn('spider')" onBlur="rOff('spider')">Spider</div>
+			<div id="chicken"><input type="radio" name="animals" onFocus="rOn('chicken')" onBlur="rOff('chicken')">Chicken</div>
+			<div id="hedgehog"><input type="radio" name="animals" onFocus="rOn('hedgehog')" onBlur="rOff('hedgehog')">Hedgehog</div>
+			<br>
+			<input type="submit" onClick="alert('Thanks for filling out our survey!')">
+			<input type="reset" onClick="alert('You have clicked the reset button. Have fun starting over!')">
+		</form>
+		
+		
+	</body>
+	<footer>
+		
+	<footer>
+</html>
