@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<title>Primer 18</title>
+		<script language="javascript">
+			function webSearch(engine){
+				var searchfor=document.theForm.theSearch.value;
+				if (engine=="google"){
+					location.href=("https://www.google.com/search?q="+searchfor)
+				}
+				else if(engine=="bing"){
+					location.href=("https://www.bing.com/search?q="+searchfor)
+				}
+				else if(engine=="yahoo"){
+					location.href=("https://search.yahoo.com/search?p="+searchfor)
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<form name="theForm">
+			<input type="text" name="theSearch">
+			<input type="button" value="Google" onClick="webSearch('google')">
+			<input type="button" value="Bing" onClick="webSearch('bing')">
+			<input type="button" value="Yahoo" onClick="webSearch('yahoo')">
+		</form>
+	</body>
+	<footer>
+		
+	</footer>
+</html>

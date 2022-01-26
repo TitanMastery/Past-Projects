@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<title>JavaScript Review #7c</title>
+		<script language="javascript">
+			function calculate(){
+				var ws=eval(document.getElementById("wSpeed").value)
+				var bp=eval(document.getElementById("bPressure").value)
+				if (ws>=74&&ws<=95||bp>=980){
+					document.getElementById("category").innerHTML="Category 1 Hurricane";
+				}
+				else if (ws>95&&ws<=110||bp>=965&&bp<980){
+					document.getElementById("category").innerHTML="Category 2 Hurricane";
+				}
+				else if (ws>110&&ws<=129||bp>=945&&bp<965){
+					document.getElementById("category").innerHTML="Category 3 Hurricane";
+				}
+				else if (ws>129&&ws<=156||bp>=920&&bp<945){
+					document.getElementById("category").innerHTML="Category 4 Hurricane";
+				}
+				else if (ws>156||bp<920){
+					document.getElementById("category").innerHTML="Category 5 Hurricane";
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<form>
+			<h2>Hurricane Category Calculator:</h2>
+			<p>Wind Speed(mph): <input type="text" id="wSpeed"></p>
+			<p>or</p>
+			<p>Barometric Pressure(mb(hPa)): <input type="text" id="bPressure"></p>
+			<input type="button" value="Calculate" onClick="calculate()"><br><br>
+			<p id="category"></p>
+		</form>
+	</body>
+	<footer>
+		
+	</footer>
+</html>

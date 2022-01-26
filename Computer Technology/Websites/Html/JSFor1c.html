@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<title>JavaScript For #1c</title>
+	</head>
+	<body>
+		<script language="javascript">
+			var low=eval(prompt("What is your lowest height?",""));
+			var high=eval(prompt("What is your highest height?",""));
+			var yards;
+			var feet;
+			document.write("Meters\tYards\tFeet<br>");
+			for(var i=high;i>=low;i=i-200){
+					yards=Math.floor(i/.9144);
+					feet=Math.floor(i/.3048);
+					document.write(i+"\t"+yards+"\t"+feet+"<br>");
+			}
+		</script>
+	</body>
+	<footer>
+		
+	</footer>
+</html>

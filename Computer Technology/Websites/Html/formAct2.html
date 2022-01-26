@@ -1,0 +1,49 @@
+<html>
+	<head>
+		<title>Form Activity 2</title>
+		<style type="text/css">
+			h1{font-family:"Comic Sans MS", serif;text-decoration:underline;}
+			p{font-family:"Comic Sans MS", serif;}
+			input{margin-left:50;}
+			select{margin-left:50;}
+			textarea{margin-left:50;}
+			body{background-color:#cdcddd;}
+		</style>
+	</head>
+	<body>
+		<h1>Form Activity 2</h1>
+		<form method="post" action="mailto:james.farthing@jcschools.us?subject=Form Activity 2" enctype="text/plain">
+			<p>What is your name?<br><br><input type="text" name="name" value="Enter Here"></p>
+			<p>What is your gender?</p>
+			<p>
+			<input type="radio" name="gender" value="male">Male <br>
+			<input type="radio" name="gender" value="female">Female <br>
+			<input type="radio" name="gender" value="attackHelicopter">Attack Helicopter
+			</p>
+			<p>What is your home school?</p>
+			<select name="school">
+				<option value="DNA" selected>-----Select One-----</option>
+				<option value="jeffersonCity">Jefferson City</option>
+				<option value="southernCallaway">Southern Callaway</option>
+				<option value="california">California</option>
+				<option value="trinityLutheran">Trinity Lutheran</option>
+				<option value="helias">Helias</option>
+				<option value="southernBoone">Southern Boone</option>
+				<option value="blairOaks">Blair Oaks</option>
+				<option value="jamesTown">Jamestown</option>
+				<option value="russelville">Russelville</option>
+				<option value="newBloomfield">New Bloomfield</option>
+				<option value="fatima">Fatima</option>
+			</select>
+			<p>What is your favorite color?</p>
+			<input type="color" name="color">
+			<p>What are your favorite hobbies?</p>
+			<textarea cols="30" rows="5" name="hobbies"></textarea><br><br>
+			<input type="reset">
+			<input type="submit">
+		</form>
+	</body>
+	<footer>
+		
+	</footer>
+</html>

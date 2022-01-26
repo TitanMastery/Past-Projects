@@ -1,0 +1,56 @@
+<html>
+	<head>
+		<script src="script.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		
+		<title>Hedgehog Farmer</title>
+	</head>
+	
+	<body onload="timer();update();ftimer()">
+		<center>
+		<table id="mainTable">
+			<tr id="tableRow1">
+				<td colspan="100%">
+					 <center>
+						<font id="timeDisplay" align=""></font>
+					</center>
+				</td>
+			</tr>
+			
+			
+			
+			<tr id="tableRow2">
+				<td colspan="20%">
+					<font id="moneyDisplay">$300</font>
+				</td>
+				
+				<td colspan="60%">
+					<center>
+						<font id="hedgehogs"></font>
+						<button onclick="breeding()">Breed</button>
+						<font id="breedTimer"></font>
+					</center>
+				</td>
+				
+				<td id="foodBar" colspan="20%">
+					<font id="foodNum">20</font>
+				</td>
+			</tr>
+			
+			
+			
+			<tr id="tableRow3">
+				<td colspan="100%">
+					<br>
+					<br>
+					<br>
+					<br>
+				</td>
+			</tr>
+		</table>
+		</center>
+	</body>
+	
+	<footer>
+	</footer>
+</html>

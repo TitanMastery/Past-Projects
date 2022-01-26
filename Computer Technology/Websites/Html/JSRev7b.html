@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<title>JavaScript Review #7b</title>
+		<script language="javascript">
+			function chill(){
+				var answer = prompt("What is the wind chill?","Enter Here");
+				answer=eval(answer);
+				if (answer>=-10&&answer<=9){
+					alert(answer+"\u2109 Unpleasant");
+				}
+				else if (answer<-10&&answer>=-25){
+					alert(answer+"\u2109 Frostbite is possible")
+				}
+				else if (answer<-25&&answer>=-65){
+					alert(answer+"\u2109 Frostbite Danger. Flesh freezes in a minute.")
+				}
+				else if (answer<-65){
+					alert(answer+"\u2109 Frostbite Warning. Flesh freezes in 30 seconds.")
+				}
+			}
+		</script>
+	</head>
+	<body onLoad="chill()">
+		
+	</body>
+	<footer>
+		
+	</footer>
+</html>

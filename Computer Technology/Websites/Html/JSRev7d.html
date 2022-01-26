@@ -1,0 +1,62 @@
+<html>
+	<head>
+		<title>JavaScript Review #7d</title>
+		<script language="javascript">
+			function calculate(){
+				var ws=eval(document.getElementById("wSpeed").value)
+				var fs=document.getElementById("fScale").value.toLowerCase()
+				if (ws>=40&&ws<=72||fs=="f0"){
+					document.getElementById("category").innerHTML="F0 Tornado";
+					document.getElementById("wind speed").innerHTML="40 mph – 72 mph";
+					document.getElementById("destruction").innerHTML="Light damage. Some damage to chimneys; branches broken off trees; shallow-rooted trees pushed over; sign boards damaged.";
+					document.cow.style.visibility="hidden";
+				}
+				else if (ws>72&&ws<=112||fs=="f1"){
+					document.getElementById("category").innerHTML="F1 Tornado";
+					document.getElementById("wind speed").innerHTML="73 mph – 112 mph";
+					document.getElementById("destruction").innerHTML="Moderate damage. The lower limit is the beginning of hurricane wind speed; peels surface off roofs; mobile homes pushed off foundations or overturned; moving vehicles pushed off the roads; attached garages may be destroyed.";
+					document.cow.style.visibility="hidden";
+				}
+				else if (ws>112&&ws<=157||fs=="f2"){
+					document.getElementById("category").innerHTML="F2 Tornado";
+					document.getElementById("wind speed").innerHTML="113 mph – 157 mph";
+					document.getElementById("destruction").innerHTML="Significant damage. Roofs torn off frame houses; mobile homes demolished; boxcars overturned; large trees snapped or uprooted; highrise windows broken and blown in; light-object missiles generated.";
+					document.cow.style.visibility="hidden";
+				}
+				else if (ws>157&&ws<=206||fs=="f3"){
+					document.getElementById("category").innerHTML="F3 Tornado";
+					document.getElementById("wind speed").innerHTML="158 mph – 206 mph";
+					document.getElementById("destruction").innerHTML="Severe damage. Roofs and some walls torn off well-constructed houses; trains overturned; most trees in forest uprooted; heavy cars lifted off the ground and thrown.";
+					document.cow.style.visibility="visible";
+				}
+				else if (ws>206&&ws<=260||fs=="f4"){
+					document.getElementById("category").innerHTML="F4 Tornado";
+					document.getElementById("wind speed").innerHTML="207 mph – 260 mph";
+					document.getElementById("destruction").innerHTML="Devastating damage. Well-constructed houses leveled; structures with weak foundations blown away some distance; cars thrown and large missiles generated.";
+					document.cow.style.visibility="visible";
+				}
+				else if (ws>260&&ws<=318||fs=="f5"){
+					document.getElementById("category").innerHTML="F5 Tornado";
+					document.getElementById("wind speed").innerHTML="261 mph – 318 mph";
+					document.getElementById("destruction").innerHTML="Incredible damage. Strong frame houses lifted off foundations and carried considerable distances to disintegrate; automobile sized missiles fly through the air farther than 100 metres (330 ft); trees debarked; steel reinforced concrete structures badly damaged and skyscrapers toppled.";
+					document.cow.style.visibility="visible";
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<form>
+			<h2>Tornado Damage Calculator:</h2>
+			<p>Wind Speed(mph): <input type="text" id="wSpeed"></p>
+			<p>Fujita Scale Category: <input type="text" id="fScale"></p>
+			<input type="button" value="Calculate" onClick="calculate()"><br><br>
+			<img src="gr/cow.gif" name="cow" style="visibility:hidden;"><br><br>
+			<h2 id="category"></h2>
+			<p id="wind speed"></p>
+			<p id="destruction"></p>
+		</form>
+	</body>
+	<footer>
+		
+	</footer>
+</html>

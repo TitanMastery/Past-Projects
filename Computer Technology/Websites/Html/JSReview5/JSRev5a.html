@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<title>JavaScript Review Activity #5a</title>
+		<script language="javascript">
+			function theArea(l,w){
+				document.getElementById('area').value=l*w;
+			}
+		</script>
+	</head>
+	<body>
+		<form>
+			Length:<input type="text" id="length"><br><br>
+			Width:<input type="text" id="width"><br><br>
+			<input type="button" value="Calculate" onClick="theArea(document.getElementById('length').value,document.getElementById('width').value)">
+			<br><br>
+			Area:<input type="text" id="area">
+		</form>
+	</body>
+	<footer>
+		
+	</footer>
+</html>

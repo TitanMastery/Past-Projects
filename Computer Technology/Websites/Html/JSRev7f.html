@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<title>JavaScript Review #7f</title>
+		<script language="javascript">
+			function calculate(){
+				var T = eval(document.getElementById("temperature").value);
+				var RH = eval(document.getElementById("rHumidity").value);
+				var HI;
+				var ad1 = ((13-RH)/4)*Math.sqrt((17-Math.abs(T-95.))/17);
+				var ad2 = ((RH-85)/10) * ((87-T)/5);
+				if (T>=80){
+					HI = -42.379 + 2.04901523*T + 10.14333127*RH - .22475541*T*RH - .00683783*T*T - .05481717*RH*RH + .00122874*T*T*RH + .00085282*T*RH*RH - .00000199*T*T*RH*RH;
+					if (RH<13&&T>=80&&T<=112){
+						HI = HI - ad1;
+					}
+					else if (RH>85&&T>=80&&T<=87){
+						HI = HI + ad2;
+					}
+					document.getElementById("heatIndex").innerHTML=HI;
+				}
+				else{
+					HI = 0.5 * (T + 61.0 + ((T-68.0)*1.2) + (RH*0.094))
+					HI = (HI+T)/2
+					document.getElementById("heatIndex").innerHTML=HI;
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<h2>Heat Index Calculator</h2>
+			<p>Temperature(&#8457): <input type="text" id="temperature"></p>
+			<p>Relative Humidity(%): <input type="text" id="rHumidity"></p>
+			<input type="button" value="Calculate" onClick="calculate()"><br><br>
+			<p id="heatIndex"></p>
+	</body>
+	<footer>
+		
+	</footer>
+</html>

@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<title>JavaScript Review Activity #6c</title>
+		<script language="javascript">
+			function theArea(b1,b2,h){
+				document.getElementById("area").value=.5*(Number(b1)+Number(b2))*h;
+			}
+		</script>
+	</head>
+	<body>
+		<form>
+			Base<sub>1</sub>:<input type="text" id="base1"><br><br>
+			Base<sub>2</sub>:<input type="text" id="base2"><br><br>
+			Height:<input type="text" id="height"><br><br>
+			<input type="button" value="Calculate" onClick="theArea(document.getElementById('base1').value, document.getElementById('base2').value, document.getElementById('height').value)">
+			<br><br>
+			Area:<input type="text" id="area">
+		</form>
+	</body>
+	<footer>
+		
+	</footer>
+</html>

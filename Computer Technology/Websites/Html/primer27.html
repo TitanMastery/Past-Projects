@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<title>Primer 27</title>
+	</head>
+	<body>
+		<script language="javascript">
+			var num=0;
+			var pic1=new Image();
+			pic1.src="gr/pic1.gif";
+			var pic2=new Image();
+			pic2.src="gr/pic2.gif";
+			var pic3=new Image();
+			pic3.src="gr/pic3.gif";
+			var images=[pic1.src,pic2.src,pic3.src];
+			
+			function nSlideshow(){
+				num++;
+				if (num==3){
+					num=0;
+				}
+				document.pic.src=images[num];
+			}
+			function bSlideshow(){
+				num--;
+				if (num==-1){
+					num=2;
+				}
+				document.pic.src=images[num];
+			}
+		</script>
+		<img name="pic" src="gr/pic1.gif"><br>
+		<button onClick="bSlideshow()">Back</button>
+		<button onClick="nSlideshow()">Next</button>
+	</body>
+	<footer>
+		
+	</footer>
+</html>

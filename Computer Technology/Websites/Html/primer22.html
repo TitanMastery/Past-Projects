@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<title>Primer 22</title>
+		<script language="javascript">
+			var num;
+			function rand(){
+				num=Math.random()*10+1;
+				num=Math.floor(num);
+			}
+			function guess(){
+				var response=prompt("What's your number?","");
+				if (response==num){
+					alert("You guessed it!");
+					rand();
+				}
+				else if (response>num){
+					alert("Your guess was too high");
+				}
+				else if (response<num){
+					alert("Your guess was too low");
+				}
+				else{
+					alert("Please input a number")
+				}
+			}
+		</script>
+	</head>
+	<body onLoad="rand()">
+		<h2>Pick a number between 1 and 10</h2>
+		<button onClick="guess()">Guess</button>
+	</body>
+	<footer>
+		
+	</footer>
+</html>

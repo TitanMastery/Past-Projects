@@ -1,0 +1,38 @@
+h1
+	{
+	text-align:center;
+	font-size:24pt;
+	font-family:"Times New Roman", Serif;
+	}
+	
+p
+	{
+	text-align:justify;
+	font-size:14pt;
+	font-family:"Comic Sans MS", Serif;
+	}
+	
+h3
+	{
+	text-align:left;
+	font-size:14pt;
+	font-family:"Times New Roman", Serif;
+	text-decoration:underline;
+	}
+	
+ul
+	{
+	text-align:left;
+	font-size:14pt;
+	font-family:"Comic Sans MS", Serif;
+	}
+	
+a
+	{
+	text-align:left;
+	font-size:14pt;
+	font-family:"Comic Sans MS", Serif;
+	text-decoration:none;
+	font-style:italic;
+	font-weight:bold;
+	}

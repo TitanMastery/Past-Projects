@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<title>Primer 21</title>
+		<script language="javascript">
+			function gender(){
+				var response=prompt("What is your gender");
+				response=response.toLowerCase();
+				document.getElementById("x").style.visibility="hidden";
+				if (response=="male"){
+					document.bgColor="lightblue"
+				}
+				else if (response=="female"){
+					document.bgColor="pink"
+				}
+				else if (response=="apache attack helicopter"){
+					document.body.style.backgroundImage="url('gr/camo.jpg')";
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<table height="100%" width="100%">
+		<tr width="100%">
+		<td valign="center" height="100%">
+		<center>
+		<button onClick="gender()" id="x">Gender</button>
+		</center>
+		</td>
+		</tr>
+		</table>
+	</body>
+	<footer>
+		
+	</footer>
+</html>

@@ -1,0 +1,64 @@
+body
+	{
+		background-color:#C1DAD6;
+	}
+	
+h1
+	{
+		text-align:center;
+		color:#000044;
+	}
+	
+hr
+	{
+		width:65%;
+	}
+	
+#navBar
+	{
+		text-align:center;
+		color:#000044;
+		font-size:14pt;
+	}
+	
+#navBarL
+	{
+		text-decoration:none;
+		color:#000044;
+		font-size:14pt;
+	}
+	
+h2
+	{
+		text-align:center;
+		color:#000044;
+	}
+	
+#bodyP
+	{
+		text-align:left;
+		color:#000044;
+	}
+	
+h3
+	{
+		text-align:left;
+		color:#000044;
+	}
+	
+li
+	{
+		text-align:left;
+		color:#000044;
+	}
+	
+#color
+	{
+		color:#000044;
+	}
+	
+#footerT
+	{
+		text-align:center;
+		color:#000044;
+	}

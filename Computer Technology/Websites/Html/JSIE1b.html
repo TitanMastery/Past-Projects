@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<title>JavaScript If/Else #1b</title>
+		<script language="javascript">
+			function rw(){
+				var answer=document.theForm.mcq.value;
+				if (answer==36){
+					alert("You got it!");
+				}
+				else{
+					alert("Wrong!")
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<form name="theForm">
+			<p>g(x)=6x+12</p>
+			<p>g(4)=?</p>
+			<p><input type="radio" name="mcq" value="12">12</p>
+			<p><input type="radio" name="mcq" value="24">24</p>
+			<p><input type="radio" name="mcq" value="36">36</p>
+			<p><input type="radio" name="mcq" value="48">48</p>
+			<input type="button" onClick="rw()" value="Submit">
+		</form>
+	</body>
+	<footer>
+		
+	</footer>
+</html>

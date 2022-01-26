@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<title>JavaScript Review Activity #6d</title>
+		<script language="javascript">
+			function money(d){
+				document.getElementById("euro").value=d*.86;
+				document.getElementById("peso").value=d*19.11;
+				document.getElementById("yen").value=d*113.57;
+			}
+		</script>
+	</head>
+	<body>
+		<form>
+			Dollar:<input type="text" id="dollar"><br><br>
+			<input type="button" value="Calculate" onClick="money(document.getElementById('dollar').value)">
+			<br><br>
+			Euro:<input type="text" id="euro">
+			Peso:<input type="text" id="peso">
+			Yen:<input type="text" id="yen">
+		</form>
+	</body>
+	<footer>
+		
+	</footer>
+</html>

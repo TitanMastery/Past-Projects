@@ -1,0 +1,8 @@
+/**Rules**\
+1. Click fire to earn lasers
+2. Click upgrades to open laser upgrade menu
+3. Use lasers to purchase laser upgrades
+4. Have fun and see how many lasers you can earn
+
+The settings menu allows you to customize your gaming experience by disabling audio and changing colors.
+This menu also allows you to reset the game.

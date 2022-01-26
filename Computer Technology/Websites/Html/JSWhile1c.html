@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<title>JavaScript While #1c</title>
+	</head>
+	<body>
+		<script language="javascript">
+			var low=eval(prompt("What is your lowest height?",""));
+			var high=eval(prompt("What is your highest height?",""));
+			var yards;
+			var feet;
+			document.write("Meters\tYards\tFeet<br>");
+			while(high>=low){
+					yards=Math.floor(high/.9144);
+					feet=Math.floor(high/.3048);
+					document.write(high+"\t"+yards+"\t"+feet+"<br>");
+					high=high-200;
+			}
+		</script>
+	</body>
+	<footer>
+		
+	</footer>
+</html>

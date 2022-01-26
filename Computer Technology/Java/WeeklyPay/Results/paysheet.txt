@@ -1,0 +1,9 @@
+david helmick
+111-11-1111
+
+Hours Worked: 		65.25
+Hourly Wage: 		$20.00
+Gross Pay: 		$1,557.50
+Insurance Cost: 	$77.88
+Taxes Deducted: 	$155.75
+Net Pay: 		$1,323.88

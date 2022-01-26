@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<title></title>
+		<script language="javascript">
+			var mr = "Mr.";
+			var fa = "Farthing";
+			var is = "is";
+			var aw = "awesome";
+			var bgc = document.bgColor;
+			var fgc = document.fgColor;
+			var lc = document.linkColor;
+			var vlc = document.vlinkColor;
+			var alc = document.alinkColor;
+			var url = document.location;
+			
+			function concatenation()
+			{
+				alert(mr+" "+fa+" "+is+" "+aw);
+			}
+			function sup()
+			{
+				document.theForm.theTextBox.value = document.bgColor;
+			}
+			function hey()
+			{
+				document.theForm.theTextBox2.value = document.fgColor;
+			}
+			function hello()
+			{
+				var lc = document.linkColor;
+				var vlc = document.vlinkColor;
+				var alc = document.alinkColor;
+				document.theForm.theTextArea.value = (lc+" "+vlc+" "+alc);
+			}
+			function welcome()
+			{
+				document.theForm.theTextBox3.value = document.location;
+			}
+		</script>
+	</head>
+	<body bgColor="#ddeadd" text="purple" link="green" alink="orange" vlink="red" onLoad="concatenation()">
+		<form name="theForm">
+			<input type="text" name="theTextBox" onFocus="sup()"><br><br>
+			<input type="text" name="theTextBox2" onFocus="hey()"><br><br>
+			<textarea name="theTextArea" onFocus="hello()"></textarea><br><br>
+			<input type="text" name="theTextBox3" onFocus="welcome()"><br><br>
+		</form>
+	</body>
+	<footer>
+		
+	</footer>
+</html>

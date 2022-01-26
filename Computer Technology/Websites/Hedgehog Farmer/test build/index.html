@@ -1,0 +1,121 @@
+<html>
+	<head>
+		
+		<script src="script.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="shortcut icon" type="Favicon" href="gr/hedgehog.png"/>
+		
+		<audio autoplay preload loop>
+	<source src="sounds/Dee_Yan-Key_-_06_-_nightingales_last_song.mp3" type="audio/mp3">
+	</audio>
+		
+		<title>Hedgehog Farmer</title>
+	</head>
+	
+	<body onload="timer();update();animation(0);animation(1);" bgColor="#ffdead">
+		<center>
+		<table id="mainTable" cellpadding="0" cellspacing="0">
+			<tr id="tableRow1">
+				<td colspan="3"><center><font id="timeDisplay" align=""></font></center></td>
+			</tr>
+			
+			
+			
+			<tr id="tableRow2">
+				<td width="15%"><font id="moneyDisplay">$300</font></td>
+				
+				<td width="70%" align="right" style="padding-right:315;"><font id="hedgehogs"></font><button onclick="breeding()">Breed</button><font id="breedTimer"></font></td>
+				
+				<td bgColor="#00ff00" id="foodBar" width="15%"><font id="foodNum">20</font></td>
+			</tr>
+			
+			
+			
+			<tr id="tableRow3">
+				<td colspan="3" id="backdrop">
+					<div id="contain" class="container">
+						<img src="gr/hedgehog64px.png" id="img[0]" class="animate">
+						<img src="gr/hedgehog64px.png" id="img[1]" class="animate">
+					</div>
+				</td>
+			</tr>
+			
+			
+			
+			
+			<tr>
+				<td align="left">
+					<div>
+						<table id="storeTable" cellspacing="0">
+							<tr>
+								<td class="buttonTab"><h4 align="center">Hedgehog Supplies</h4></td>
+							</tr>
+			
+							<tr valign="top">
+								<td colspan="2">
+									<br>
+									&nbsp;&nbsp;
+									<img src="gr/hedgehog.png"  alt="hedgehog"/> 
+									<font>+1 Hedgehog</font>
+									<button class="button" onClick="buyHHogs(1)" id="buy1">-$200</button>
+									<br><br>
+									&nbsp;&nbsp;
+									<img src="gr/hedgehog.png"  alt="hedgehog"/> 
+									<font> -1 Hedgehog</font>
+									<button class="button" onClick="sellHHogs(1)" id="sell1">+$100</button>
+									<br><br>
+									&nbsp;
+									<img src="gr/hedgehog.png"  alt="hedgehog"/> 
+									<font>+10 Hedgehog</font>
+									<button class="button" onClick="buyHHogs(10)" id="buy10">-$2k</button>
+									<br><br>
+									&nbsp;&nbsp;
+									<img src="gr/hedgehog.png"  alt="hedgehog"/> 
+									<font>-10 Hedgehog</font>
+									<button class="button" onClick="sellHHogs(10)" id="sell10">+$1k</button>
+									<br><br>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</td>
+				<td align="right" colspan="2">
+					<div>
+						<table id="storeTable" cellspacing="0">
+							<tr>
+								<td class="buttonTab"><h4 align="center">Farm Upgrades</h4></td>
+							</tr>
+							<tr valign="top">
+								<td>
+									<br>
+									<img src="gr/carrot.png"alt="carrot" /> 
+									<font> +12 Food</font>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									<button class="button" onclick="buyFood()">-$20</button>
+									<br><br>
+									<img src="gr/foodUpgradeIcon.jpg"> 
+									<font> +5 Max Food</font>
+									<button class="button" onclick="troughUpgrade()" id="troughB">-$100</button>
+									<br><br>
+									<img src="gr/document.png" alt="document" /> 
+									<font> +1 Acre </font>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									<button class="button" onClick="acreUpgrade()" id="acreB">-$500</button>
+									<br><br>
+									<img src="gr/saleIcon.png">
+									<font> 5% Sale Price</font>
+									<button class="button" onClick="sellIncrease()" id="sellB">-$400</button>
+									<br><br>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</td>
+			</tr>
+		</table>
+		</center>
+	</body>
+	
+	<footer>
+	</footer>
+</html>

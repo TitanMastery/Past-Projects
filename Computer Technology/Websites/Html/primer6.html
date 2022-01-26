@@ -1,0 +1,30 @@
+<SCRIPT type="text/javascript">
+
+var name = prompt("Please write in your first name","")
+//declares variable name and assigns it to the output of the prompt that asks for the user's first name
+
+var x = new Date(); 
+//declares variable x and assigns it the value of new Date() 
+
+var y =  x.getFullYear();  
+//declares variable y and assigns it output of of the function getFullYear() on the variable x
+
+var m = x.getMonth() + 1;  
+//declares variable m to the output of getMonth() on the variable x and adds 1 to the value 
+
+var d = x.getDate();
+//assigns d the output of the function getFullYear() on the variable x
+
+var t =  m + '/' + d + '/' + y + ' ';
+//string concatenation that takes the different date variables and puts them together with text to make an output statement for the user to understand and can be used anywhere on the site
+
+document.write("<TITLE>")
+//opens the title tag for html so that we can write to the page with javascript
+
+document.write("Hi "+ name + " Today's date is " + t + "Thanks for coming");
+//concatenates the name variable and the t variable that holds the date and adds text to display to the website with a document writing statement
+
+document.write("</TITLE>")
+//closes the title tag for the website so we cannot write on it anymore
+
+</SCRIPT>

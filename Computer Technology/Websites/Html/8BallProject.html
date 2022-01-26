@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<title>Magic 8 Ball</title>
+		<link rel="Shortcut Icon" href="gr/8ball.png">
+	</head>
+	<body style="color:white;" bgColor="black">
+		<script language="javascript">
+			var responses=["Ask Again Later","Better Not Tell You Now","Concentrate and Ask Again","Don't Count on It","It Is Certain","Most Likely","My Reply is No","My Sources Say No","No","Outlook Good","Outlook Not So Good","Reply Hazy, Try Again","Signs Point to Yes","Yes","Yes, Definitely","You May Rely On It"];
+			function response(){
+				var num=Math.floor(Math.random()*16);
+				document.getElementById("answer").innerHTML="<h1>"+responses[num]+"</h1>";
+			}
+		</script>
+		<center>
+		<img src="gr/8ball.png" width="100"><br>
+		<h2>Ask the Magic 8 Ball a Question if you Dare</h2>
+		<form>
+			<input type="text" id="q">
+			<input type="button" onClick="response()" value="Submit"><br><br>
+		</form>
+		<marquee id="answer" hspace="25%"></marquee>
+		</center>
+	</body>
+	<footer>
+		
+	</footer>
+</html>
